@@ -18,8 +18,8 @@ main:
   - title: "CV"
     url: /cv/
   # 注释掉这个导航栏  
-  # - title: "Guide"
-  #   url: /markdown/
+  - title: "Guide"
+    url: /markdown/
 
   - title: "关于"
     url: /aboutme/
