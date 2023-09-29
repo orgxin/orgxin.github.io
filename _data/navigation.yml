@@ -1,4 +1,9 @@
 # main links links
+
+# 这个文件是用来设置导航栏的，可以新增或者删除导航栏；
+# 若要新增导航栏，需要在这里先添加，然后去“_config.yml”里面
+# 对应的“# Collections”和“# Defaults”里面进行相应的配置。
+
 main:
   - title: "Publications"
     url: /publications/

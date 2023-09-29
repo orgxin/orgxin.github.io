@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
-  email            :
+  email            : "1234@qq.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         : "二狗"
   foursquare       :
-  github           : "academicpages"
+  github           : "https://github.com/orgxin"
   google_plus      :
   keybase          :
   instagram        :
@@ -173,7 +173,7 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
+# 配置导航栏
 # Collections
 collections:
   teaching:
@@ -192,7 +192,7 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-
+# 配置导航栏
 # Defaults
 defaults:
   # _posts

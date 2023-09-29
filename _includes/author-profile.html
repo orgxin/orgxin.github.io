@@ -4,6 +4,9 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
+
+<!-- 这个文件是用于修改侧边栏sidebar的一些信息 -->
+
 <div itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">
@@ -114,6 +117,10 @@
       {% endif %}
       {% if author.impactstory %}
         <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw"></i> Impactstory</a></li>
+      {% endif %}
+      <!-- 这里添加了一个微信 -->
+      {% if author.wechat %}
+        <li><a href="{{ author.wechat }}"><i class="ai ai-wechat ai-fw"></i> WeChat</a></li>
       {% endif %}
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
