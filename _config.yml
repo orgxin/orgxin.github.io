@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "二狗 / 首页"
+title                    : "HOME"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
