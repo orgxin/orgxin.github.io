@@ -138,7 +138,7 @@
       // 创建一个新的图像元素
       var qrCodeImage = document.createElement("img");
       // 设置图像元素的 src 属性为微信二维码的图片路径
-      qrCodeImage.src = "/images/dog.png"; // 替换为你的微信二维码图片路径
+      qrCodeImage.src = "{{ base_path }}/images/dog.png"; // 替换为你的微信二维码图片路径
       // 添加图像元素到页面中
       document.body.appendChild(qrCodeImage);
   }
