@@ -119,12 +119,28 @@
         <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw"></i> Impactstory</a></li>
       {% endif %}
       <!-- 这里添加了一个微信 -->
-      {% if author.wechat %}
+      <!-- {% if author.wechat %}
         <li><a href="{{ author.wechat }}"><i class="ai ai-wechat ai-fw"></i> WeChat</a></li>
+      {% endif %} -->
+      {% if author.wechat %}
+        <li><a href="#" onclick="showWeChatQRCode()"><i class="ai ai-wechat ai-fw"></i> WeChat</a></li>
       {% endif %}
+
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
     </ul>
   </div>
 </div>
+
+<script>
+  function showWeChatQRCode() {
+      // 创建一个新的图像元素
+      var qrCodeImage = document.createElement("img");
+      // 设置图像元素的 src 属性为微信二维码的图片路径
+      qrCodeImage.src = "/path/to/wechat-qrcode.png"; // 替换为你的微信二维码图片路径
+      // 添加图像元素到页面中
+      document.body.appendChild(qrCodeImage);
+  }
+  </script>
+  
