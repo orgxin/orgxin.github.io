@@ -80,12 +80,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "Xin Chen(陈新)"
+  name             : "Xin Chen (陈新)"
   avatar           : "my.png"
-  bio              : "纸上得来终觉浅！"
+  bio              : "纸上得来终觉浅，绝知此事要躬行。"
   location         : "Chengdu, China"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  # pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
   email            : "chenxinnpu@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
