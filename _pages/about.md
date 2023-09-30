@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "陈新的个人主页"
+title: "Chen Xin's personal homepage."
 excerpt: "About me"
 author_profile: true
 redirect_from: 
