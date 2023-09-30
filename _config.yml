@@ -80,21 +80,21 @@ analytics:
 
 # Site Author
 author:
-  name             : "二狗"
-  avatar           : "dog.png"
-  bio              : "狗命要紧，赶紧苟着！"
+  name             : "Xin Chen(陈新)"
+  avatar           : "my.png"
+  bio              : "纸上得来终觉浅！"
   location         : "Chengdu, China"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
-  email            : "1234@qq.com"
+  email            : "chenxinnpu@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "二狗"
+  facebook         : #"二狗"
   foursquare       :
   github           : "orgxin"
   google_plus      :
@@ -103,19 +103,19 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : #"replacethistwitterhandle"
   vine             :
   weibo            :
-  xing             : "chat"
+  xing             : #"chat"
   youtube          :
   wikipedia        :
-  wechat           : "time"
+  wechat           : #"time"
 
 
 # Reading Files
