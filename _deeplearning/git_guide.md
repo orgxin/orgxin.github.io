@@ -1,3 +1,12 @@
+---
+title: 'Git使用教程'
+date: 20223-10-01
+permalink: /deeplearning/git_guide
+tags:
+  - Git
+  - 教程
+---
+
 # Git使用教程
 
 
