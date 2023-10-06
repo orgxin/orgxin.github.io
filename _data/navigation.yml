@@ -5,32 +5,42 @@
 # 对应的“# Collections”和“# Defaults”里面进行相应的配置。
 
 main:
-  - title: "Publications"
-    url: /publications/
+  # - title: "Publications"
+  #   url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  # - title: "Talks"
+  #   url: /talks/    
 
-  - title: "Teaching"
-    url: /teaching/    
+  # - title: "Teaching"
+  #   url: /teaching/    
     
-  - title: "Portfolio"
-    url: /portfolio/
+  # - title: "Portfolio"
+  #   url: /portfolio/
         
-  - title: "Blog Posts"
-    url: /year-archive/
+  # - title: "Blog Posts"
+  #   url: /year-archive/
     
-  - title: "CV"
-    url: /cv/
-  # 注释掉这个导航栏  
-  - title: "Guide"
-    url: /markdown/
+  # - title: "CV"
+  #   url: /cv/
+  # # 注释掉这个导航栏  
+  # - title: "Guide"
+  #   url: /markdown/
 
-  - title: "关于"
-    url: /aboutme/
+  
+  - title: "Blogs"
+    url: /blogs/ 
 
   - title: "Deep Learning"
     url: /deeplearning/
+  
+  - title: "PyTorch"
+    url: /pytorch/
 
-  - title: "随笔"
-    url: /life/
+  - title: "Math"
+    url: /math/   
+
+  - title: "Dailies"
+    url: /dailies/
+
+  - title: "About"
+    url: /about/

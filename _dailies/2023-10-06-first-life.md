@@ -1,8 +1,8 @@
 ---
 title: '国庆节有感'
-collection: life
+collection: dailies
 date: 2023-10-06
-permalink: /life/first-life
+permalink: /dailies/2023-10-06-first-life
 tags:
   - 生活
   - 感想

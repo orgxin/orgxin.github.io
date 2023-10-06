@@ -175,23 +175,32 @@ kramdown:
 
 # 配置导航栏
 # Collections
-collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
+# collections:
+#   teaching:
+#     output: true
+#     permalink: /:collection/:path/
+#   publications:
+#     output: true
+#     permalink: /:collection/:path/
+#   portfolio:
+#     output: true
+#     permalink: /:collection/:path/
+#   talks:
+#     output: true
+#     permalink: /:collection/:path/
+  blogs:
     output: true
     permalink: /:collection/:path/
   deeplearning:
     output: true
     permalink: /:collection/:path/
-  life:
+  pytorch:
+    output: true
+    permalink: /:collection/:path/  
+  math:
+    output: true
+    permalink: /:collection/:path/
+  dailies:
     output: true
     permalink: /:collection/:path/
 
@@ -251,6 +260,16 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+
+  # _blogs
+  - scope:
+      path: ""
+      type: blogs
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _deeplearning
   - scope:
       path: ""
@@ -260,10 +279,28 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _life
+  # _pytorch
   - scope:
       path: ""
-      type: life
+      type: pytorch
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _math
+  - scope:
+      path: ""
+      type: math
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _dailies
+  - scope:
+      path: ""
+      type: dailies
     values:
       layout: single
       author_profile: true
