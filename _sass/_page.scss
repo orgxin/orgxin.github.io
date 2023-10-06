@@ -249,6 +249,7 @@
 
 /*
    Page taxonomy
+   此处用于修改taxonomy的样式，边框、字体大小等等。
    ========================================================================== */
 
 .page__taxonomy {
@@ -267,8 +268,8 @@
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  // border: 1px solid $light-gray;
-  border: none;
+  border: 1px solid $light-gray;
+  // border: none;
   border-radius: $border-radius;
 
   &:hover {
