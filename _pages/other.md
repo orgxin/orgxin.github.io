@@ -1,10 +1,11 @@
 ---
 layout: archive
 title: "About"
-permalink: /aboutme/
+permalink: /other/
 author_profile: true
 redirect_from:
-  - /resume
+  - /other/
+  - /other.html
 ---
 
 {% include base_path %}
