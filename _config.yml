@@ -175,19 +175,19 @@ kramdown:
 
 # 配置导航栏
 # Collections
-# collections:
-#   teaching:
-#     output: true
-#     permalink: /:collection/:path/
-#   publications:
-#     output: true
-#     permalink: /:collection/:path/
-#   portfolio:
-#     output: true
-#     permalink: /:collection/:path/
-#   talks:
-#     output: true
-#     permalink: /:collection/:path/
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
   blogs:
     output: true
     permalink: /:collection/:path/
@@ -260,7 +260,6 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-
   # _blogs
   - scope:
       path: ""
