@@ -267,11 +267,11 @@
   display: inline-block;
   margin-right: 1px;
   margin-bottom: 1px;
-  padding: 5px 8px;
+  padding: 2px 4px;
   text-decoration: none;
   // border: 1px solid $light-gray;  //设置tag外边框
   border: none; 
-  border-radius: $border-radius; //圆角边框的圆角大小
+  // border-radius: $border-radius; //圆角边框的圆角大小
 
   &:hover {
     text-decoration: none;
