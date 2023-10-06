@@ -1,10 +1,11 @@
 ---
-title: "国庆节有感"
-permalink: /life/first-life
+title: '国庆节有感'
+collection: life
 date: 2023-10-06
-# tags:
-#   - 随笔
-#   - 生活 
+permalink: /life/first-life
+tags:
+  - category1
+  - category2
 ---
 
 这个国庆节还是比较充实，闭关了一周，其实也没干啥，就是在瞎折腾。  
