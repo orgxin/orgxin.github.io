@@ -4,8 +4,8 @@ collection: life
 date: 2023-10-06
 permalink: /life/first-life
 tags:
-  - category1
-  - category2
+  - 生活
+  - 感想
 ---
 
 这个国庆节还是比较充实，闭关了一周，其实也没干啥，就是在瞎折腾。  
