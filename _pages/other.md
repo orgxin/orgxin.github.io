@@ -3,9 +3,9 @@ layout: archive
 title: "About"
 permalink: /other/
 author_profile: true
-redirect_from:
-  - /other/
-  - /other.html
+# redirect_from:
+#   - /other/
+#   - /other.html
 ---
 
 {% include base_path %}
