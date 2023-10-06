@@ -262,15 +262,16 @@
   }
 }
 
+// 此处的代码可以对Tag的间距、边框、倒角进行修改。
 .page__taxonomy-item {
   display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 8px;
-  padding: 5px 10px;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  padding: 5px 8px;
   text-decoration: none;
-  border: 1px solid $light-gray;
-  // border: none;
-  border-radius: $border-radius;
+  // border: 1px solid $light-gray;  //设置tag外边框
+  border: none; 
+  border-radius: $border-radius; //圆角边框的圆角大小
 
   &:hover {
     text-decoration: none;
