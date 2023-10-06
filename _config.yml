@@ -191,6 +191,9 @@ collections:
   deeplearning:
     output: true
     permalink: /:collection/:path/
+  life:
+    output: true
+    permalink: /:collection/:path/
 
 # 配置导航栏
 # Defaults
@@ -252,6 +255,15 @@ defaults:
   - scope:
       path: ""
       type: deeplearning
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _life
+  - scope:
+      path: ""
+      type: life
     values:
       layout: single
       author_profile: true
