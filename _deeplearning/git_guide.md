@@ -1,6 +1,6 @@
 ---
 title: 'Git使用教程'
-date: 20223-10-01
+date: 2023-10-01
 collection: deeplearning
 permalink: /deeplearning/git_guide
 excerpt: '本文是一篇关于git配置及使用入门教程'
