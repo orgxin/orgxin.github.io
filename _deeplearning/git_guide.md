@@ -3,27 +3,15 @@ title: 'Git使用教程'
 date: 20223-10-01
 collection: deeplearning
 permalink: /deeplearning/git_guide
+excerpt: '本文是一篇关于git配置及使用入门教程'
 tags:
-  - Git
+  - git
+  - github
   - 教程
 ---
 
-- [一、使用流程](#一使用流程)
-  - [1.1 操作流程](#11-操作流程)
-  - [1.2 注意事项](#12-注意事项)
-- [二、其他技巧](#二其他技巧)
-  - [2.1 如何拉取远程仓库](#21-如何拉取远程仓库)
-  - [2.2 TOC目录对GitHub失效](#22-toc目录对github失效)
-  - [2.3 git对中文乱码问题](#23-git对中文乱码问题)
-  - [2.4 配置ssh免密登录](#24-配置ssh免密登录)
-  - [2.5 更改git用户名和邮箱](#25-更改git用户名和邮箱)
-- [三、常用操作命令](#三常用操作命令)
-  - [3.1 git add命令](#31-git-add命令)
-  - [3.2 git bash简单操作命令](#32-git-bash简单操作命令)
-- [四、参考文献](#四参考文献)
-
-## 一、使用流程
-### 1.1 操作流程
+##  使用流程
+###  操作流程
 
 * **本地新建一个仓库文件夹git-demo。**
 
@@ -92,7 +80,7 @@ $ git push https://github.com/orgxin/git-demo.git master
 
 需要把tokens保存到本地（可以长期使用），因为Github上只会显示一次，下次查看就需要重新生成新的tokens。
 
-### 1.2 注意事项
+###  注意事项
 
 （1）远程仓库的命名`git-demo`和本地仓库的命名`git-demo`以及远程仓库链接(https://github.com/orgxin/git-demo.git)的简化名`git-demo`这三者建议都命一样的，也可以设置不一样。
 
@@ -104,9 +92,9 @@ $ git push https://github.com/orgxin/git-demo.git master
 
 但是在使用**SSH**地址之前还需要做公钥配置，让GitHub可以对你的机子做免密登录，具体配置方法见下文。
 
-## 二、其他技巧
+##  其他技巧
 
-### 2.1 如何拉取远程仓库
+### 如何拉取远程仓库
 
 如果我们的远程仓库被其他合作者修改过，但是你自己的本地还没有修改过来看，因此需要用到`git pull`命令，将远程仓库修改的内容重新拉到本地仓库。
 
@@ -116,12 +104,12 @@ $ git push https://github.com/orgxin/git-demo.git master
 79452@legion MINGW64 /e/github/git-demo (master)
 $ git pull git-demo master
 ```
-### 2.2 TOC目录对GitHub失效
+### TOC目录对GitHub失效
 
 * vscode中安装`Markdown All in One`插件；
 * 在.md界面键入`Ctrl+Shift+P`快捷键，然后输入`Markdown All in One: Create Table of Contents`即可自动生成目录。
 
-### 2.3 git对中文乱码问题
+### git对中文乱码问题
 
 如图，如果路径中有中文命名的文件需要存到仓库，采用`git add`就会显示中文乱码的问题。
 
@@ -139,7 +127,7 @@ $ git config --global i18n.logoutputencoding utf-8
 $ set LESSCHARSET=utf-8
 ```
 
-### 2.4 配置ssh免密登录
+### 配置ssh免密登录
 
 * 输入`$ ssh-keygen -t rsa`，敲三次回车键自动生成密钥，在本地生成如下两个文件：
 
@@ -161,7 +149,7 @@ $ set LESSCHARSET=utf-8
   出现“You've successfully authenticated...”表示绑定成功。
   
 
-### 2.5 更改git用户名和邮箱
+### 更改git用户名和邮箱
 
 为了便于身份的识别，需要给每台设备的git取一个名字和邮箱，这个用户名和邮箱可以任意取（不是Github的用户名和邮箱）。
 
@@ -188,9 +176,9 @@ $ git config --global user.email 794529766@qq.com
 $ git config --global --list
 ```
 
-## 三、常用操作命令
+## 常用操作命令
 
-### 3.1 git add命令
+### git add命令
 
 git add作用是把文件放在暂存区，具体原理这里不深究。但是git add有很多命令，如`git add .`、`git add *`、`git add -A`、`git add -u`、`git add your_file`，就一个add把人给整晕了。
 
@@ -198,7 +186,7 @@ git add作用是把文件放在暂存区，具体原理这里不深究。但是g
 * 若改动的文件比较多，还包括文件夹，则可以使用`git add *`或者`git add .`，可以将所有改动包括删除的文件都放在暂存区。区别就是`git add *`不考虑`.xxx_folder`这种文件夹。
 * `git add -A`不受当前所在路径限制，将整个工作区的修改、新增和删除都放在暂存区。
 
-### 3.2 git bash简单操作命令
+### git bash简单操作命令
 
 下面介绍一些在使用git bash时常用的操作命令：
 
@@ -213,7 +201,7 @@ git add作用是把文件放在暂存区，具体原理这里不深究。但是g
 * `git log`: 查看提交的历史记录。（详细版）
 * `git reflog`: 查看提交的历史记录。（简易版）推荐
 
-## 四、参考文献
+## 参考文献
 
 [1] https://blog.csdn.net/qq_35246620/category_9268436.html
 
