@@ -3,7 +3,7 @@ title: 'torchsummary用法'
 excerpt: '一个API，用于打印模型的信息，如输入、输出大小，模型结构层次，模型的参数，每层卷积核参数等'
 date: 2023-10-15
 collection: pytorch
-permalink: /pytorch/torchsummary用法
+permalink: /pytorch/torchsummary_api
 tags:
   - API
   - 教程
@@ -56,7 +56,7 @@ summary(CNN(), (1, 28, 28), col_names=["kernel_size", "input_size", "output_size
 
 输出：
 
-![image-20231015212002337](./torchsummary%E7%94%A8%E6%B3%95.assets/image-20231015212002337.png)
+![image-20231015212002337](./torchsummary_api.assets/image-20231015212002337.png)
 
 > 注意：input shape只需要输出后三位即可，第一位batch不需要输入。
 
@@ -89,7 +89,7 @@ summary(Model(), [(1, 300), (1, 300)], dtypes=[torch.float, torch.long], col_nam
 
 输出：
 
-![image-20231015212758045](./torchsummary%E7%94%A8%E6%B3%95.assets/image-20231015212758045.png)
+![image-20231015212758045](E:\newDesktop\torchsummary用法.assets\image-20231015212758045.png)
 
 ## 三、参考文献
 
