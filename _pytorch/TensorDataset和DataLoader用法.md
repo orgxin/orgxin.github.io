@@ -94,15 +94,9 @@ trainloader = DataLoader(dataset, batch_size=4, shuffle=True)
 
 ### 2.2 使用 `iter` 和 `next`
 
-```python
-sample_batch = next(iter(dataloader))
-```
+**注意：**`iter`用于创建一个迭代器，`next`每次从迭代器中读取一个bach的数据，区别下面几种用法。
 
-**注意：**`iter`用于创建一个迭代器，`next`每次从迭代器中读取一个bach的数据，区别下面两种写法：
-
-#### 案例1：
-
-关于`next(iter(dataloader))`的用法。
++ **案例1：关于`next(iter(dataloader))`的用法。**
 
 ```python
 data_tensor = torch.randn(6, 3, 28, 28)
@@ -133,9 +127,7 @@ target_tensor: tensor([ 0.3627, -0.6271, -1.0919,  0.2115,  0.5562, -1.2587])
 
 `next(iter(dataloader))`每次都要创建一个新的迭代器，导致每次获取dataloader的第一个batch的数据，而不是继续从上次停下的地方获取，即不是完整的遍历整个dataset数据集。
 
-#### 案例2：
-
-关于`next(iter_dl)`的用法。
++ **案例2：关于`next(iter_dl)`的用法。**
 
 ```python
 iter_dl = iter(dataloader)
@@ -152,9 +144,7 @@ StopIteration                             Traceback (most recent call last)
 
 可以发现，next遍历完dataset之后就开始报错，即这中写法会将整个dataset给读取完（不会重复读取），读取完之后就终止。
 
-#### 案例3：
-
-如何采用`iter`和`next`无限读取batch数据。
++ **案例3：如何采用`iter`和`next`无限读取batch数据。**
 
 ```python
 iter_dl = iter(dataloader)
