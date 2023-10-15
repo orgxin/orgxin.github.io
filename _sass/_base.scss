@@ -123,6 +123,7 @@ a {
 }
 
 /* code */
+// 在这里修改网页展示的代码字体大小。
 
 tt, code, kbd, samp, pre {
   font-family: $monospace;
@@ -130,6 +131,7 @@ tt, code, kbd, samp, pre {
 
 pre {
   overflow-x: auto; /* add scrollbars to wide code blocks*/
+  font-size: 14px; /* 设置代码字体为14*/
 }
 
 p > code,
