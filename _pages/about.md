@@ -8,13 +8,19 @@ redirect_from:
   - /about.html
 ---
 
-##  
+
+
+
+
+---
+
 
 <div align='center'>
     <span style="font-family: 'Courier New', Courier, monospace; color:blue; font-size:30px; font-weight:bold;">
         且夫水之积也不厚，则其负大舟也无力。
     </span>
 </div>
+
 ## 写在前面
 
 **这并不是一个学术主页**（虽然我看多数学者都是用的这个[学术模板]([academicpages/academicpages.github.io: Github Pages template for academic personal websites, forked from mmistakes/minimal-mistakes](https://github.com/academicpages/academicpages.github.io))），因为我是一个学术混子，不配拥有学术主页！（等有了拿得出手的学术成果再说吧）
