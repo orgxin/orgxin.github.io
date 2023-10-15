@@ -1,8 +1,8 @@
 ---
 title: 'TensorDataset和DataLoader用法'
 date: 2023-10-15
-collection: deeplearning
-permalink: /deeplearning/TensorDataset和DataLoader用法
+collection: pytorch
+permalink: /pytorch/TensorDataset和DataLoader用法
 excerpt: 'TensorDataset、DataLoader API的用法，以及如何读取、查看dataset和dataloader。'
 tags:
   - API
