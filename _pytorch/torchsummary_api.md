@@ -89,7 +89,7 @@ summary(Model(), [(1, 300), (1, 300)], dtypes=[torch.float, torch.long], col_nam
 
 输出：
 
-![image-20231015212758045](E:\newDesktop\torchsummary用法.assets\image-20231015212758045.png)
+![image-20231015212758045](./torchsummary_api.assets/image-20231015212758045.png)
 
 ## 三、参考文献
 
