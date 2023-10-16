@@ -1,6 +1,7 @@
 ---
 title: '分辨率（DPI）、像素（px）、尺寸（in）之间的关系'
 date：2023-10-16
+collection: blogs
 permalink: /blogs/2023-10-16-blogs-pix_dpi
 excerpt: '一篇文章让你搞懂分辨率、像素和尺寸大小之间的换算关系，因为plt.figure()会用到分辨率(dpi)和英寸(inch)进行保存图片'
 tags:
