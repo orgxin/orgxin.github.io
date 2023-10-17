@@ -162,7 +162,7 @@ excerpt_separator: "\n\n"
 incremental: false
 
 # mathjax
-mathjax: true
+# mathjax: true
 
 # Markdown Processing
 kramdown:
