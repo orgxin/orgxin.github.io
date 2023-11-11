@@ -27,7 +27,7 @@ author_profile: true
 |   AEI    | Advanced Engineering Informatics         |     1      | 8.8  |
 |   ISA    | ISA Transactions                         | 2 （top）  | 7.3  |
 
-##  深度学习、机器学习
+##  人工智能
 
 ### 会议
 
@@ -51,16 +51,18 @@ author_profile: true
 |   JMLR   | Journal of Machine Learning Research                         |  ML  |
 |    PR    | Pattern Recognition                                          |  PR  |
 
+
+
 # SCI写作
 
 ## 配色
 
-### 配色网址
+**配色网址：**
 
-+ https://colorbrewer2.org/
++ [colorbrewer2](https://colorbrewer2.org/)
 
 + [一个推荐配色网址的博客文章](https://www.molecularecologist.com/2020/04/23/simple-tools-for-mastering-color-in-scientific-figures/)
 
-### 色卡
+**色卡：**
 
 （待补充）
