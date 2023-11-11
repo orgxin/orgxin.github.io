@@ -19,10 +19,14 @@ $$
 1英寸\mathrm{(inch)}= 2.54厘米\mathrm{(cm)}
 \end{equation*}
 $$
+
+
 测试：
 $$
 \begin{equation*}
-E = mc^2
-\end{equation*}
+1英寸\mathrm{(inch)}= 2.54厘米\mathrm{(cm)}
+\end{equation*}
 $$
+
+
 测试：
