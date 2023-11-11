@@ -51,5 +51,16 @@ author_profile: true
 |   JMLR   | Journal of Machine Learning Research                         |  ML  |
 |    PR    | Pattern Recognition                                          |  PR  |
 
+# SCI写作
 
+## 配色
 
+### 配色网址
+
++ https://colorbrewer2.org/
+
++ [一个推荐配色网址的博客文章](https://www.molecularecologist.com/2020/04/23/simple-tools-for-mastering-color-in-scientific-figures/)
+
+### 色卡
+
+（待补充）
