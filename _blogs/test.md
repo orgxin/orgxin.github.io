@@ -26,4 +26,21 @@ $$
 
 
 
+行间3：
 
+编号
+$$
+\begin{equation}
+\int_0^1f(t)dt = \iint_Dg(x,y)dxdy.
+\end{equation}
+$$
+行间4：
+
+编号+对齐
+$$
+\begin{align}
+E &= mc^2 \\
+  &= \frac{E}{c^2} \\
+  &= 123+34
+\end{align}
+$$
