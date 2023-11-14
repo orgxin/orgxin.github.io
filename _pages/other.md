@@ -51,14 +51,11 @@ author_profile: true
 
 **博客**
 
-* [jindongwang: Transfer learning ](https://github.com/jindongwang/transferlearning/tree/master):
-
-  王晋东博士维护的迁移学习代码库，关于迁移学习的所有学习资料、代码、文章等等都可以在这里找到。
-
-  * [baisc distance metric](https://github.com/jindongwang/transferlearning/tree/master/code#basic-distance-%E5%B8%B8%E7%94%A8%E7%9A%84%E8%B7%9D%E7%A6%BB%E5%BA%A6%E9%87%8F): 如MMD, MK-MMD, A-distance, coral loss, wasserstein distacne,....
-
+* [Transfer learning ](https://github.com/jindongwang/transferlearning/tree/master)：王晋东博士维护的迁移学习代码库。
+  * [baisc distance metric](https://github.com/jindongwang/transferlearning/tree/master/code#basic-distance-%E5%B8%B8%E7%94%A8%E7%9A%84%E8%B7%9D%E7%A6%BB%E5%BA%A6%E9%87%8F): 如MMD, MK-MMD, A-distance, coral loss, wasserstein distacne等。
+  
   * [deep feature extractor](https://github.com/jindongwang/transferlearning/tree/master/code#deep-feature-extractor-%E6%8F%90%E5%8F%96%E6%B7%B1%E5%BA%A6%E7%BD%91%E7%BB%9C%E7%89%B9%E5%BE%81%E7%94%A8%E4%BA%8E%E4%BC%A0%E7%BB%9F%E6%96%B9%E6%B3%95): 提取深度网络特征用于传统方法。
-  * [deep domain adaptation]([transferlearning/code/DeepDA at master · jindongwang/transferlearning (github.com)](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDA)): DDC,  Depp Coral,  DANN(Domain-adversarial neural network ),  DSAN,  DAAN(Dynamic Adversarial Adaptation Network),  BNM....
+  * [deep domain adaptation]([transferlearning/code/DeepDA at master · jindongwang/transferlearning (github.com)](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDA)): DDC,  Depp Coral,  DANN(Domain-adversarial neural network ),  DSAN,  DAAN(Dynamic Adversarial Adaptation Network),  BNM。
 
 **代码**
 
@@ -70,11 +67,9 @@ author_profile: true
 
 **博客**
 
-* [TwistedW's Home](http://www.twistedwg.com/pages/class.html): 跟踪了18~20年几乎所有GAN文章。
+* [TwistedW](http://www.twistedwg.com/pages/class.html): 跟踪了18~20年几乎所有GAN文章。
 
-* [苏剑林 - 科学空间](https://kexue.fm/category/Big-Data )
-
-  > 一直在跟踪GAN系列发展、演变，数学理论极其深厚，具有独到见解。
+* [苏剑林 - 科学空间](https://kexue.fm/category/Big-Data ): 一直在跟踪GAN系列发展，数学理论深厚，见解独到。
 
 * [郑之杰的个人网站 ](https://0809zheng.github.io/tags.html#深度学习)：其中的**GAN**、**数学**专栏推荐学习。
 
