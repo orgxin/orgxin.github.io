@@ -5,20 +5,9 @@ permalink: /other/
 author_profile: true
 ---
 
-{% include base_path %}
-
->目前还不太熟，网页正在完善中，尚未添加留言、互动模块，有任何问题请发邮件：`chenxinnpu@gmail.com`。
-
 # 期刊汇总
 
-**notes**: 可能发不了以下这些顶刊，但是新手入门或者看文献消遣除了以下文献，其余文献一律不看。
-
-<div align='center'>
-    <span style="font-family: 'Courier New', Courier, monospace; color:red; font-size:18px; font-weight:bold;">
-        人生苦短，文献我只看Top!
-    </span>
-</div>
-## 故障诊断期刊
+## 故障诊断
 
 | 期刊简称 | 期刊全称                                    | 中科院分区 |  IF  |
 | :------: | ------------------------------------------- | :--------: | :--: |
@@ -56,23 +45,7 @@ author_profile: true
 |   JMLR   | Journal of Machine Learning Research                         |  ML  |
 |    PR    | Pattern Recognition                                          |  PR  |
 
-
-
-# SCI写作
-
-## 配色
-
-**配色网址：**
-
-+ [colorbrewer2](https://colorbrewer2.org/)
-
-+ [一个推荐配色网址的博客文章](https://www.molecularecologist.com/2020/04/23/simple-tools-for-mastering-color-in-scientific-figures/)
-
-**色卡：**
-
-（待补充）
-
-# 迁移学习领域
+# 迁移学习
 
 ## 博客
 
@@ -89,19 +62,25 @@ author_profile: true
 
 
 
-# 生成对抗网络领域
+# 生成对抗网络
 
 ## 博客
 
 * [TwistedW's Home](http://www.twistedwg.com/pages/class.html): 跟踪了18~20年几乎所有GAN文章。
-* [苏剑林 - 科学空间|Scientific Spaces](https://kexue.fm/category/Big-Data): 一致在跟踪GAN系列发展、演变，数学理论及其深厚。
+
+* 苏剑林 - 科学空间:  一直在跟踪GAN系列发展、演变，数学理论极其深厚，具有独到见解。
+
+  >https://kexue.fm/category/Big-Data
+
 * [郑之杰的个人网站 ](https://0809zheng.github.io/tags.html#深度学习)：其中的**GAN**、**数学**专栏推荐学习。
 
 ## 代码
 
 
 
-# 故障诊断领域
+
+
+# 故障诊断
 
 ## 博客
 
@@ -109,3 +88,20 @@ author_profile: true
 
 ## 代码
 
+
+
+
+
+# SCI写作
+
+## 配色
+
+**配色网址：**
+
++ [colorbrewer2](https://colorbrewer2.org/)
+
++ [一个推荐配色网址的博客文章](https://www.molecularecologist.com/2020/04/23/simple-tools-for-mastering-color-in-scientific-figures/)
+
+**色卡：**
+
+（待补充）
