@@ -5,9 +5,11 @@ permalink: /other/
 author_profile: true
 ---
 
+随便写点什么！
+
 # 期刊汇总
 
-## 故障诊断
+**故障诊断**
 
 | 期刊简称 | 期刊全称                                    | 中科院分区 |  IF  |
 | :------: | ------------------------------------------- | :--------: | :--: |
@@ -21,9 +23,7 @@ author_profile: true
 |   JIM    | Journal of Intelligent Manufacturing        |     1      | 8.3  |
 |   JMS    | Journal of Manufacturing Systems            |     1      | 12.1 |
 
-##  人工智能
-
-**会议**
+**人工智能会议**
 
 | 会议简称 | 全称                                                        | 领域 |
 | :------: | ----------------------------------------------------------- | :--: |
@@ -34,7 +34,7 @@ author_profile: true
 |   ICML   | International Conference on Machine Learning                |  ML  |
 | NeurIPS  | Conference on Neural Information Processing Systems         |  ML  |
 
-**期刊**
+**人工智能期刊**
 
 | 期刊简称 | 全称                                                         | 领域 |
 | :------: | ------------------------------------------------------------ | :--: |
@@ -44,6 +44,8 @@ author_profile: true
 |   TIP    | IEEE Transactions on Image Processing                        |  CV  |
 |   JMLR   | Journal of Machine Learning Research                         |  ML  |
 |    PR    | Pattern Recognition                                          |  PR  |
+
+
 
 # 迁移学习
 
@@ -62,15 +64,17 @@ author_profile: true
 
 
 
+
+
 # 生成对抗网络
 
 ## 博客
 
 * [TwistedW's Home](http://www.twistedwg.com/pages/class.html): 跟踪了18~20年几乎所有GAN文章。
 
-* 苏剑林 - 科学空间:  一直在跟踪GAN系列发展、演变，数学理论极其深厚，具有独到见解。
+* 苏剑林 - 科学空间: https://kexue.fm/category/Big-Data 
 
-  >https://kexue.fm/category/Big-Data
+  > 一直在跟踪GAN系列发展、演变，数学理论极其深厚，具有独到见解。
 
 * [郑之杰的个人网站 ](https://0809zheng.github.io/tags.html#深度学习)：其中的**GAN**、**数学**专栏推荐学习。
 
@@ -94,14 +98,8 @@ author_profile: true
 
 # SCI写作
 
-## 配色
-
 **配色网址：**
 
 + [colorbrewer2](https://colorbrewer2.org/)
 
 + [一个推荐配色网址的博客文章](https://www.molecularecologist.com/2020/04/23/simple-tools-for-mastering-color-in-scientific-figures/)
-
-**色卡：**
-
-（待补充）
