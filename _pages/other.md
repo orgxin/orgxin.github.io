@@ -105,4 +105,6 @@ author_profile: true
 
 **三色**：
 
-<img src="./other.assets/3c.png" alt="3c" style="zoom: 67%;" />
+<div align='center'>
+    <img src='./other.assets/3c.png' width="40%">
+</div>
