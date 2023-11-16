@@ -102,3 +102,7 @@ author_profile: true
 + [colorbrewer2](https://colorbrewer2.org/)
 
 + [一个推荐配色网址的博客文章](https://www.molecularecologist.com/2020/04/23/simple-tools-for-mastering-color-in-scientific-figures/)
+
+**三色**：
+
+<img src="./other.assets/3c.svg" alt="3c" style="zoom: 67%;" />
