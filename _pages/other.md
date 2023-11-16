@@ -105,4 +105,4 @@ author_profile: true
 
 **三色**：
 
-<img src="./other.assets/3c.svg" alt="3c" style="zoom: 67%;" />
+<img src="./other.assets/3c.png" alt="3c" style="zoom: 67%;" />
