@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: /pages/other
+permalink: /other/
 author_profile: true
 ---
 
@@ -104,6 +104,5 @@ author_profile: true
 
 **三色**：
 
-<div align='center'>
-    <img src='./other.assets/3c1.jpg'>
-</div>
+![3c1]()<img src="./other.assets/3c1.jpg" alt="3c1" style="zoom:50%;" />
+
