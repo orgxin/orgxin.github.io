@@ -104,5 +104,5 @@ author_profile: true
 
 **三色**：
 
-<img src="./other.assets/3c1.jpg" alt="3c1" style="zoom:50%;" />
+<img src="./other.assets/3c1.jpg">
 
