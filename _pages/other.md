@@ -4,8 +4,6 @@ permalink: /other/
 author_profile: true
 ---
 
-随便写点什么！
-
 # 期刊汇总
 
 **故障诊断**
@@ -104,6 +102,5 @@ author_profile: true
 
 **三色**：
 
-<div align='center'>
-    <img src='./other.assets/3c.png' width="40%">
-</div>
+![3c_color](./other.assets/3c.jpg)
+
