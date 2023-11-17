@@ -2,6 +2,8 @@
 layout: archive
 permalink: /other/
 author_profile: true
+redirect_from: 
+  - /md/
 ---
 
 >一些汇总！
@@ -104,5 +106,5 @@ author_profile: true
 
 **三色**：
 
-<img src="./other.assets/3c1.jpg">
+![111](./other.assets/3c1.jpg)
 
