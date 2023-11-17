@@ -104,5 +104,4 @@ author_profile: true
 
 **三色**：
 
-![3c1]()<img src="./other.assets/3c1.jpg" alt="3c1" style="zoom:50%;" />
-
+![3c](./other.assets/3c1.jpg)
