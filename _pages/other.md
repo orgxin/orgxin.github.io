@@ -3,7 +3,7 @@ layout: archive
 permalink: /other/
 author_profile: true
 redirect_from: 
-  - /md/
+  - /other/
 ---
 
 >一些汇总！
