@@ -2,9 +2,6 @@
 layout: archive
 permalink: /other/
 author_profile: true
-redirect_from: 
-  - /other/
-  - /other.html
 ---
 
 随便写点什么！
