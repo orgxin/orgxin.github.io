@@ -10,17 +10,23 @@ author_profile: true
 
 **故障诊断**
 
-| 期刊简称 | 期刊全称                                    | 中科院分区 |  IF  |
-| :------: | ------------------------------------------- | :--------: | :--: |
-|   MSSP   | Mechanical Systems and Signal Processing    |     1      | 8.4  |
-|   ESA    | Expert Systems with Applications            |     1      | 8.5  |
-|   AEI    | Advanced Engineering Informatics            |     1      | 8.8  |
-|   KBS    | Knowledge-Based Systems                     |     1      | 8.8  |
-|   ISA    | ISA Transactions                            | 2 （top）  | 7.3  |
-|   TII    | IEEE Transactions on Industrial Informatics |     1      | 12.3 |
-|   TIE    | IEEE Transactions on Industrial Electronics |     1      | 7.7  |
-|   JIM    | Journal of Intelligent Manufacturing        |     1      | 8.3  |
-|   JMS    | Journal of Manufacturing Systems            |     1      | 12.1 |
+| 期刊简称 | 期刊全称                                             | 中科院分区 |  IF  |
+| :------: | ---------------------------------------------------- | :--------: | :--: |
+|   MSSP   | Mechanical Systems and Signal Processing             |     1      | 8.4  |
+|   ESWA   | Expert Systems with Applications                     |     1      | 8.5  |
+|   AEI    | Advanced Engineering Informatics                     |     1      | 8.8  |
+|   KBS    | Knowledge-Based Systems                              |     1      | 8.8  |
+|   JIM    | Journal of Intelligent Manufacturing                 |     1      | 8.3  |
+|   JMS    | Journal of Manufacturing Systems                     |     1      | 12.1 |
+|   ISA    | ISA Transactions                                     | 2 （top）  | 7.3  |
+|   RESS   | Reliability Engineering & System Safety              |     1      | 8.1  |
+|   CII    | Computers in Industry                                |     1      |  10  |
+|   ASC    | Applied Soft Computing                               | 2 （top）  | 8.7  |
+|   EAAI   | Engineering Applications of Artificial Intelligence  | 2 （top）  |  8   |
+|    /     | Neurocomputing                                       | 2 （top）  |  6   |
+|   TII    | IEEE Transactions on Industrial Informatics          |     1      | 12.3 |
+|   TIE    | IEEE Transactions on Industrial Electronics          |     1      | 7.7  |
+|   TIM    | IEEE Transactions on Instrumentation and Measurement |     2      | 5.6  |
 
 **人工智能会议**
 
