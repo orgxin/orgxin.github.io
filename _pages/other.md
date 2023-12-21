@@ -50,64 +50,14 @@ author_profile: true
 |   JMLR   | Journal of Machine Learning Research                         |  ML  |
 |    PR    | Pattern Recognition                                          |  PR  |
 
+# 其他
 
+**SCI润色特征工程**
 
-# 迁移学习
+I am preparing my SCI paper for submission and require assistance in polishing each paragraph. Could you please refine my writing for academic rigor? I need you to correct any grammatical errors, improve sentence structure for academic suitability, and make the text more formal where necessary. Moreover, passive voice is recommended because passive voice is more popular than active voice in SCI papers. For each paragraph we need to improve, you need to put all modified sentences in a Markdown table, each column contains the following: Full original sentence; Highlight the revised part of the sentence; Explain why made these changes. Finally,  Rewrite the full, corrected paragraph. If you understand, please reply: yes, let's get started.
 
-**博客**
+> 参考：https://zhuanlan.zhihu.com/p/665255498
 
-* [Transfer learning ](https://github.com/jindongwang/transferlearning/tree/master)：王晋东博士维护的迁移学习代码库。
-  * [baisc distance metric](https://github.com/jindongwang/transferlearning/tree/master/code#basic-distance-%E5%B8%B8%E7%94%A8%E7%9A%84%E8%B7%9D%E7%A6%BB%E5%BA%A6%E9%87%8F): 如MMD, MK-MMD, A-distance, coral loss, wasserstein distacne等。
-  
-  * [deep feature extractor](https://github.com/jindongwang/transferlearning/tree/master/code#deep-feature-extractor-%E6%8F%90%E5%8F%96%E6%B7%B1%E5%BA%A6%E7%BD%91%E7%BB%9C%E7%89%B9%E5%BE%81%E7%94%A8%E4%BA%8E%E4%BC%A0%E7%BB%9F%E6%96%B9%E6%B3%95): 提取深度网络特征用于传统方法。
-  * [deep domain adaptation]([transferlearning/code/DeepDA at master · jindongwang/transferlearning (github.com)](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDA)): DDC,  Depp Coral,  DANN(Domain-adversarial neural network ),  DSAN,  DAAN(Dynamic Adversarial Adaptation Network),  BNM。
+**中国常见基金、奖项及奖学金的英文译名**
 
-**代码**
-
-
-
-
-
-# 生成对抗网络
-
-**博客**
-
-* [TwistedW](http://www.twistedwg.com/pages/class.html): 跟踪了18~20年几乎所有GAN文章。
-
-* [苏剑林 - 科学空间](https://kexue.fm/category/Big-Data ): 一直在跟踪GAN系列发展，数学理论深厚，见解独到。
-
-* [郑之杰的个人网站 ](https://0809zheng.github.io/tags.html#深度学习)：其中的**GAN**、**数学**专栏推荐学习。
-
- **代码**
-
-* 
-
-
-
-# 故障诊断
-
-**博客**
-
-* 
-
-
-
-**代码**
-
-* 
-
-
-
-
-
-# SCI写作
-
-**配色网址：**
-
-+ [colorbrewer2](https://colorbrewer2.org/)
-
-+ [一个推荐配色网址的博客文章](https://www.molecularecologist.com/2020/04/23/simple-tools-for-mastering-color-in-scientific-figures/)
-
-**三色**：
-
-![3c](./other.assets/3c1.jpg)
+参考链接：https://www.xoveexu.com/project/translation-of-funding-and-scholarship.html
