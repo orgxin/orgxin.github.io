@@ -2,7 +2,7 @@
 title: 'Matplotlib: 隐藏刻度线和刻度值'
 collection: blogs
 date: 2023-12-29
-permalink: /blogs/2023-12-29-hidden_tick
+permalink: /pytorch/2023-12-29-hidden_tick
 excerpt: '隐藏figure中的坐标刻度线和刻度值的实现方法'
 tags:
   - matplotlib
@@ -26,11 +26,7 @@ plt.show()
 **仅隐藏刻度值**
 
 ```python
-x = np.linspace(0, 3, 100)
-y = np.sin(2*np.pi*x)
-
-fig, ax = plt.subplots()
-ax.plot(x, y)
+....
 
 # 隐藏刻度值
 ax.xaxis.set_major_formatter(plt.NullFormatter())
@@ -46,11 +42,7 @@ plt.show()
 **隐藏刻度线+刻度值**
 
 ```python
-x = np.linspace(0, 3, 100)
-y = np.sin(2*np.pi*x)
-
-fig, ax = plt.subplots()
-ax.plot(x, y)
+....
 
 # 同时隐藏tick_line和tick_value
 ax.yaxis.set_major_locator(plt.NullLocator())
