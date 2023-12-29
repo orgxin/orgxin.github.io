@@ -1,6 +1,6 @@
 ---
 title: 'Matplotlib: 隐藏刻度线和刻度值'
-collection: blogs
+collection: pytorch
 date: 2023-12-29
 permalink: /pytorch/2023-12-29-hidden_tick
 excerpt: '隐藏figure中的坐标刻度线和刻度值的实现方法'
