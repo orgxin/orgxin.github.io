@@ -16,12 +16,13 @@ author_profile: true
 |   ESWA   | Expert Systems with Applications                     |     1      | 8.5  |
 |   AEI    | Advanced Engineering Informatics                     |     1      | 8.8  |
 |   KBS    | Knowledge-Based Systems                              |     1      | 8.8  |
-|   JIM    | Journal of Intelligent Manufacturing                 |     1      | 8.3  |
+|   JIM    | Journal of Intelligent Manufacturing                 |     2      | 8.3  |
 |   JMS    | Journal of Manufacturing Systems                     |     1      | 12.1 |
 |   ISA    | ISA Transactions                                     | 2 （top）  | 7.3  |
 |   RESS   | Reliability Engineering & System Safety              |     1      | 8.1  |
 |   CII    | Computers in Industry                                |     1      |  10  |
-|   ASC    | Applied Soft Computing                               | 2 （top）  | 8.7  |
+|   ASC    | Applied Soft Computing                               |     1      | 8.7  |
+|   CIE    | Computers & Industrial Engineering                   |     1      | 7.9  |
 |   EAAI   | Engineering Applications of Artificial Intelligence  | 2 （top）  |  8   |
 |    /     | Neurocomputing                                       | 2 （top）  |  6   |
 |   TII    | IEEE Transactions on Industrial Informatics          |     1      | 12.3 |
