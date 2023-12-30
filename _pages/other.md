@@ -4,7 +4,7 @@ permalink: /other/
 author_profile: true
 ---
 
->一些汇总！
+> 网页还在完善中，目前还没接入评论，有任何问题欢迎邮件联系：chenxinnpu@gmail.com
 
 # 期刊汇总
 
