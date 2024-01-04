@@ -7,9 +7,9 @@ tags:
   - tensorboard
 ---
 
-# 快速入门
+# 1. 快速入门
 
-一个简单的tensorboard入门案例:
+一个简单的tensorboard入门案例。初步掌握tensorboard怎么运行起来。
 
 ```python
 import torch
@@ -17,7 +17,6 @@ from torch.utils.tensorboard import SummaryWriter
 from datetime import datetime
 
 time_now = "{0:%Y-%m-%d-%H-%M-%S/}".format(datetime.now()) # 获取当前时间
-# writer = SummaryWriter()这种写法默认自动新建runs文件夹，将每次训练的事件都保存在runs文件夹下
 writer = SummaryWriter(f'logs/demo1/{time_now}') # 推荐这种写法SummaryWriter(f'logs/{time_now}')
 
 x = torch.arange(-5, 5, 0.1).view(-1, 1)
@@ -49,18 +48,15 @@ writer.close()
 tensorboard --logdir=logs/demo1 # 前面保持不变，后面logs/demo1为事件所在文件夹
 ```
 
-可视化操作界面：
+可视化结果如下：
 <div align='center'>
     <img src='./images/vis_config.png' width="40%">
 </div>
-
-上述默认配置，保持不变即可。
-
-# 认识Tensorboard
+# 2. 认识Tensorboard
 
 这个案例以一个基本CNN模型切入点，讲解tensorboard的一些可能的用法，较上一个案例更难，但更加全面。
 
-## 导入模块
+## 2.1 导入模块
 
 ```
 import matplotlib.pyplot as plt
@@ -81,7 +77,7 @@ import tensorboard as tb
 tf.io.gfile = tb.compat.tensorflow_stub.io.gfile
 ```
 
-## 准备工作
+## 2.2 准备工作
 
 数据准备、处理、搭建模型、损失函数、优化器...
 
@@ -138,15 +134,16 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 ```
 
-## Tensorboard建立
+## 2.3 Tensorboard建立
+
+将日志写在指定路径下，若不指定，则默认写在runs文件夹下。
 
 ```python
-# 将日志写在指定路径下（不指定，则默认写在runs文件夹下）
 time_now = "{0:%Y-%m-%d-%H-%M-%S/}".format(datetime.now())
 writer = SummaryWriter(f'logs/demo2/{time_now}')
 ```
 
-## 写入`add_image`
+## 2.4 写入图片：`add_image`
 
 ```python
 dataiter = iter(trainloader)
@@ -163,13 +160,12 @@ writer.add_image("shown_four_images", img_grid) # 写入图片
 <div align='center'>
     <img src='./images/show_images.png' width="60%">
 </div>
+## 2.5 模型结构可视化：`add_graph`
 
-## 模型结构可视化：`add_graph`
-
-作用：对模型的结构进行可视化，用于展示模型的构成和参数设置。
+对模型的结构进行可视化，用于展示模型的构成和参数设置。
 
 ```python
-writer.add_graph(net, images) # 可视化模型结构
+writer.add_graph(net, images)
 ```
 
 可视化结果：
@@ -177,10 +173,9 @@ writer.add_graph(net, images) # 可视化模型结构
 <div align='center'>
     <img src='./images/model_structure.png' width="85%">
 </div>
+## 2.6 数据降维：`add_embedding`
 
-## 数据降维：`add_embedding`
-
-作用：相当于一个映射器，将高维数据嵌入到低维表达。
+相当于一个映射器projector，将高维数据嵌入到低维表达。
 
 ```python
 def select_n_random(data, labels, n=100): # 从数据集中随机取100张图片
@@ -202,8 +197,7 @@ writer.add_embedding(mat=images.view(-1, 28 * 28), # (100, 28, 28)->(100, 28*28)
 <div align='center'>
     <img src='./images/projector.png' width="100%">
 </div>
-
-## 跟踪模型训练：`add_figure`、`add_scalar`
+## 2.7 跟踪模型训练：`add_figure`、`add_scalar`
 
 ```python
 def images_to_probs(net, images):
@@ -261,7 +255,7 @@ for epoch in range(1):
             running_loss = 0.0
 ```
 
-## 模型评估PR曲线：`add_pr_curve`
+## 2.8 模型评估PR曲线：`add_pr_curve`
 
 ```python
 class_probs = []
@@ -305,26 +299,35 @@ plt.show()
     <img src='./images/loss_curve.png' width="40%; margin-right: 10px;">
     <img src='./images/pr_curve.png' width="50%">
 </div>
-
-## 结束
+## 2.9 结束
 
 ```python
 writer.close()
 ```
 
-# 经典案例
+# 3. 经典案例
 
-## 可视化模型的梯度
-
-
+**（1）记录学习率**
 
 
 
 
 
-# 常见问题汇总
+**（2）记录权重**
 
-### （1）多个events事件显示混乱问题
+
+
+
+
+**（3）记录梯度**
+
+
+
+
+
+# 4. 常见问题汇总
+
+**(1) 多个events事件显示混乱问题**
 
 当在同一个文件夹下保存了多个envents事件，可视化的时候就会同时将其展示在一张图上，就会出现混乱。解决办法：
 
@@ -350,8 +353,43 @@ writer = SummaryWriter(f'logs/demo1/{time_now}')
 <div align='center'>
     <img src='./images/multi-events_vis.png' width="40%">
 </div>
+因此，**完全不推荐以下写法：**
 
+```python
+writer = SummaryWriter() #这种写法默认自动新建runs文件夹，将每次训练的事件全部保存在runs文件夹下
+```
 
+**这种写法也不推荐：**
+
+```python
+writer = SummaryWriter('logs')
+```
+
+**（2）tag分组**
+
+在进行`tag`命令的时候，建议对其进行分组，便于显示。
+
+```python
+writer.add_scalar("Loss/train", loss, epoch)
+writer.add_scalar("Loss/test", loss, epoch)
+```
+
+分组之后，两个结果会展示在同一个组里，结果如下：
+
+<div align='center'>
+    <img src='./images/loss_group2.png' width="60%">
+</div>
+
+```
+writer.add_scalar("Loss", loss, epoch)
+writer.add_scalar("Loss1", loss, epoch)
+```
+
+未分组，则结果
+
+<div align='center'>
+    <img src='./images/loss_group1.png' width="60%">
+</div>
 
 
 
