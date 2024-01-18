@@ -7,66 +7,64 @@ excerpt: '本文是一篇关于git配置及使用入门教程'
 tags:
   - git
   - github
-  - 教程
+  - vim
 ---
 
-#  使用流程
+# 1. 操作流程
 
-##  操作流程
-
-* **本地新建一个仓库文件夹git-demo。**
+**step 1: 本地新建一个仓库文件夹git-demo**
 
 需要在当前路径下打开git bash：
 
-<div align="center"><img src="./images/fig1.png" width="60%"></div>
+<div align="center"><img src="./images/fig1.png" width="50%"></div>
 
-* **初始化本地仓库。**
+**step 2: 初始化本地仓库**
 
-```git
+```python
 79452@legion MINGW64 /e/github/git-demo
 $ git init
 ```
 
-* **在本地编写一个代码用于后面的上传。**
-  假设本地仓库新放入一个文件：test.txt。
+**step 3: 在本地编写一个代码用于后面的上传**
+假设本地仓库新放入一个文件：test.txt。
 
-* **存在暂存区。**
+**step 4: 存在暂存区**
 
-```git
+```python
 79452@legion MINGW64 /e/github/git-demo (master)
 $ git add test.txt
 ```
 
-* **推送到本地仓库。**
+**step 5: 推送到本地仓库**
 
-```git
+```python
 79452@legion MINGW64 /e/github/git-demo (master)
 $ git commit -m "first commit" test.txt
 ```
 
-* **在GitHub新建一个仓库**。
-  仓库名设置为`git-demo`，当然自己可以随便命名，建议与我们本地新建的仓库保持一致。获得远程仓库的地址：https://github.com/orgxin/git-demo.git
+**step 6: 在GitHub新建一个仓库**
+仓库名设置为`git-demo`，当然自己可以随便命名，建议与我们本地新建的仓库保持一致。获得远程仓库的地址：https://github.com/orgxin/git-demo.git
 
 <img src='./images/fig2.png' width="60%">
 
-​	接下来将远程仓库的地址用一个简化的名字代替（别名），便于后期推送，这里我们采用`git-demo`指代https://github.com/orgxin/git-demo.git。
+接下来将远程仓库的地址用一个简化的名字代替（别名），便于后期推送，这里我们采用`git-demo`指代https://github.com/orgxin/git-demo.git。
 
-```git
+```python
 79452@legion MINGW64 /e/github/git-demo (master)
 $ git remote add git-demo https://github.com/orgxin/git-demo.git
 ```
-​	以后远程的仓库的链接就可以用别名git-demo代替了。查看远程仓库地址的简化名称:
+以后远程的仓库的链接就可以用别名git-demo代替了。查看远程仓库地址的简化名称:
 
-```git
+```python
 79452@legion MINGW64 /e/github/git-demo (master)
 $ git remote -v
 git-demo        https://github.com/orgxin/git-demo.git (fetch)
 git-demo        https://github.com/orgxin/git-demo.git (push)
 ```
 
-* **推送到远程仓库。**
+**step 7: 推送到远程仓库。**
 
-```git
+```python
 79452@legion MINGW64 /e/github/git-demo (master)
 $ git push git-demo master
 
@@ -81,27 +79,27 @@ $ git push https://github.com/orgxin/git-demo.git master
 
 需要把tokens保存到本地（可以长期使用），因为Github上只会显示一次，下次查看就需要重新生成新的tokens。
 
-##  注意事项
+**注意事项:**
 
 （1）远程仓库的命名`git-demo`和本地仓库的命名`git-demo`以及远程仓库链接(https://github.com/orgxin/git-demo.git)的简化名`git-demo`这三者建议都命一样的，也可以设置不一样。
 
-<img src="./images/fig3.png" width="70%">
+<img src="./images/fig3.png" width="50%">
 
 （2）在拉取远程仓库地址时不要使用**HTTPS**地址，建议使用**SSH**远程仓库地址，这样在每次推送的时候不会弹框，让你输入账户名和密码。
 
-<div align="center"><img src="./images/ssh.png" width="80%"></div>
+<div align="center"><img src="./images/ssh.png" width="50%"></div>
 
 但是在使用**SSH**地址之前还需要做公钥配置，让GitHub可以对你的机子做免密登录，具体配置方法见下文。
 
-#  其他技巧
+#  2. 一些技巧
 
-## 如何拉取远程仓库
+## 拉取远程仓库
 
 如果我们的远程仓库被其他合作者修改过，但是你自己的本地还没有修改过来看，因此需要用到`git pull`命令，将远程仓库修改的内容重新拉到本地仓库。
 
 一般而言，pull和push我们需要反复的用到，在本地修改了之后就要push到远程进行同步。在远程仓库的文件被其他合作者修改之后，就需要pull下来对本地的进行替换。
 
-```git
+```python
 79452@legion MINGW64 /e/github/git-demo (master)
 $ git pull git-demo master
 ```
@@ -115,12 +113,13 @@ $ git pull git-demo master
 如图，如果路径中有中文命名的文件需要存到仓库，采用`git add`就会显示中文乱码的问题。
 
 <div align="center">
-<img src="./images/fig4.png" width="80%">
+<img src="./images/fig4.png" width="60%">
 </div>
+
 
 **解决办法：**
 
-```git
+```python
 $ git config --global core.quotepath false
 $ git config --global gui.encoding utf-8
 $ git config --global i18n.commit.encoding utf-8
@@ -130,32 +129,31 @@ $ set LESSCHARSET=utf-8
 
 ## 配置ssh免密登录
 
-* 输入`$ ssh-keygen -t rsa`，敲三次回车键自动生成密钥，在本地生成如下两个文件：
+**step 1: **输入`ssh-keygen -t rsa`，敲三次回车键自动生成密钥，在本地生成如下两个文件：
 
 <div align="center">
-<img src="./images/ssh1.png" width="80%">
+<img src="./images/ssh1.png" width="50%">
 </div>
 
 
 
 
 
-* 将`id_rsa.pub`里面的内容复制到github中。
+**step 2:** 将`id_rsa.pub`里面的内容复制到github中。
 
 <div align="center">
-<img src="./images/sshkey.png" width="80%">
+<img src="./images/sshkey.png" width="50%">
 </div>
 
-* 验证是否绑定成功：`$ ssh -T git@github.com`
-  出现“You've successfully authenticated...”表示绑定成功。
-  
+**step 3:** 验证是否绑定成功`ssh -T git@github.com`，出现“You've successfully authenticated...”表示绑定成功。
 
-## 更改git用户名和邮箱
+## git用户名和邮箱
 
 为了便于身份的识别，需要给每台设备的git取一个名字和邮箱，这个用户名和邮箱可以任意取（不是Github的用户名和邮箱）。
 
-* 查看用户名和邮箱
-```git
+**查看用户名和邮箱**
+
+```python
 79452@legion MINGW64 /f/NewDesktop
 $ git config user.name
 
@@ -163,21 +161,23 @@ $ git config user.name
 $ git config user.email
 ```
 
-* 配置全局用户名和邮箱
-```git
+**配置全局用户名和邮箱**
+
+```py
 79452@legion MINGW64 /f/NewDesktop
 $ git config --global user.name home
 
 79452@legion MINGW64 /f/NewDesktop
 $ git config --global user.email 794529766@qq.com
 ```
-* 查看用配置信息
-```git
+**查看用配置信息**
+
+```python
 79452@legion MINGW64 /f/NewDesktop
 $ git config --global --list
 ```
 
-# 常用操作命令
+# 3. 常用操作命令
 
 ## git add命令
 
@@ -201,10 +201,39 @@ git add作用是把文件放在暂存区，具体原理这里不深究。但是g
 * `git reflog`: 查看提交的历史记录。（简易版）推荐
 * `git status`：查看文件的状态命令
 
-# 参考文献
+## vim常用操作命令
 
-[1] https://blog.csdn.net/qq_35246620/category_9268436.html
+### vim模式
+
++ `Esc`进入正常模式，左下角显示文件名或为空，可以输入下列命令
++ `i`进入insert模式，左下角显示–INSERT–，可以写入
+
+### 退出命令
+
++ `:q`不保存，并退出
++ `:q!`不保存，并强制退出
++ `:w` 保存文件，不退出
++ `:w!` 强制保存，不退出
++ `:wq`保存，并退出
++ `:wq!`强制保存，并退出
++ `ZZ` 保存并退出
+
+### 启动
+
++ `vim`进入vim
++ `vim filename.format`在当前路径打开vim，并创建文件filename.format
+
+### 其他
+
++ `:open filename`在vim窗口中打开filename文件
++ `:!ls` 列出当前路径下所有文件
+
+**参考文献**
+
+[1] [史上最简单的 GitHub 教程](https://blog.csdn.net/qq_35246620/category_9268436.html)
 
 [2] [git add .，git add -A，git add -u，git add * 的区别与联系 - 掘金 (juejin.cn)](https://juejin.cn/post/7053831273277554696)
 
 [3] [01_尚硅谷_Git_课程介绍_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1vy4y1s7k6/?p=1&vd_source=9846a548f75285e1389fa28ee637d374)
+
+[4] [VIM中的保存和退出、VIM退出命令、如何退出vim编辑、VIM命令大全_vim保存退出命令-CSDN博客](https://blog.csdn.net/feosun/article/details/73196299)
