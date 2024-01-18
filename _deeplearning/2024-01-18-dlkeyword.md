@@ -1,5 +1,5 @@
 ---
-title: '一网打尽深度学习中常见的英文词汇含义与用途'
+title: '深度学习中常见的英文词汇含义'
 date: 2024-01-18
 permalink: /deeplearning/2024-01-18-dlkeyword
 excerpt: '介绍pipeline、baseline、backbone、benchmark、Framework、structure等经典单词的含义和用途。'
@@ -13,7 +13,7 @@ tags:
 
 + **Framework (框架)：**指的是为解决一类特定问题而设计的预制结构或方法集合。
 + **structure （结构）：**深度学习模型的**网络结构**。
-+ **Architecture （架构）：**
++ **Architecture （架构）：**比structure 更高一级，强调模型的整体设计，如整体拓扑结构。
 
 ## 类别2
 
