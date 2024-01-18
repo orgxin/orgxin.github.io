@@ -1,9 +1,10 @@
 ---
 title: '一网打尽深度学习中常见的英文词汇含义与用途'
-collection: blogs
 date: 2024-01-18
-permalink: /blogs/2024-01-18-dlkeyword
+permalink: /deeplearning/2024-01-18-dlkeyword
 excerpt: '介绍pipeline、baseline、backbone、benchmark、Framework、structure等经典单词的含义和用途。'
+tags:
+  - 名词解释
 ---
 
 ## 类别1
