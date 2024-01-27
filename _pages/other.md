@@ -62,3 +62,7 @@ I am preparing my SCI paper for submission and require assistance in polishing e
 **中国常见基金、奖项及奖学金的英文译名**
 
 参考链接：https://www.xoveexu.com/project/translation-of-funding-and-scholarship.html
+
+**镜像**
+
+>pip install xxxx -i https://pypi.tuna.tsinghua.edu.cn/simple
