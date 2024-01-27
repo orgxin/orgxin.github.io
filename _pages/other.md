@@ -65,4 +65,4 @@ I am preparing my SCI paper for submission and require assistance in polishing e
 
 **镜像**
 
->pip install xxxx -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install xxxx -i https://pypi.tuna.tsinghua.edu.cn/simple
