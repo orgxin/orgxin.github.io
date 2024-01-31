@@ -1,6 +1,6 @@
 ---
-title: `__call__`和forward方法的用途与区别'
-excerpt: '本文以案例的形式全面对比分析魔术命令`__call__`和forward方法的联系与区别'
+title: 'call魔术方法和forward方法的用途与区别'
+excerpt: '本文以案例的形式全面对比分析魔术命令call和forward方法的联系与区别'
 permalink: /pytorch/2024-01-31-call_forward
 date: 2024-01-31
 tags:
@@ -16,11 +16,11 @@ tags:
 
 因此，接下来将以案例的形式解决上述三个问题。
 
-# 1. `__call__`魔术方法
+#  `__call__`魔术方法#
 
 为了区别该魔术方法(class)和一般的定义函数方法(function)，下面用两个demo加以说明。
 
-**`__call__`案例：**
+## `__call__`案例
 
 ```python
 class Squarer:
@@ -31,7 +31,7 @@ squarer = Squarer()  # 类的实例
 result = squarer(5)  # 可以像函数一样直接调用
 ```
 
-**定义一个类def的案例：**
+## 定义一个类def的案例
 
 ```python
 class Squarer:
@@ -46,7 +46,7 @@ result = squarer._call(5) # 显示调用类下面函数
 
 下面进一步分析该魔术方法相比类方法的优势所在。具体而言，`__call__`在<font color=blue>对象状态保持或者配置时更具有优势。</font>接下来仍然用两个案例加以说明状态保持的重要性。
 
-**`__call__`案例：**
+## `__call__`案例
 
 ```python
 class Counter:
@@ -62,7 +62,7 @@ print(counter())  # 输出：1
 print(counter())  # 输出：2
 ```
 
-**定义一个类def的案例：**
+## 定义一个类def的案例
 
 ```python
 class Counter:
@@ -80,13 +80,13 @@ print(counter.increment())  # 输出：2
 
 <font color=red><b>小结</b>：第二种方法需要频繁的显示调用类方法来改变这种状态，第一种方法可以保持内部状态。</font>
 
-# 2. `forward`方法
+# forward方法#
 
-需要注意的是，所谓的`forward`一般而言指的是pytorch的`nn.Module`子类下面的`forward`方法。下面通过一个案例分析`forward`的执行流程，以及与`__call__`顺序关系。
+需要注意的是，所谓的forward一般而言指的是PyTorch的`nn.Module`子类下面的`forward`方法。下面通过一个案例分析`forward`的执行流程，以及与`__call__`顺序关系。
 
-**有继承关系:**
+## 有继承关系
 
-> 详细分析PyTorch框架中的`nn.Module`模块执行流程。
+详细分析PyTorch框架中的`nn.Module`模块执行流程。
 
 ```python
 import torch.nn as nn
@@ -115,8 +115,7 @@ output = model(x)  # 这里实际调用了 __call__，它又调用了 forward
 </div>
 
 
-
-**无继承关系：**
+## 无继承关系
 
 上面用的是PyTorch框架，用继承实现了`__call__`和`forward`的连接，接下来从直观上理解（不采用继承nn.Module）两者之间是如何传递信息的。
 
@@ -170,9 +169,9 @@ module传入的参数是： 11
 
 <font color=red><b>小结：</b>在nn.Module模块中，forward方法是专门用于做核心计算的模块，但其并不返回计算结果(不直接被调用)，而是通过`__call__`间接调用，并返回forward计算获得的结果。</font>
 
-# 3. 联系和区别
+# 联系和区别#
 
-下面用一个简单的案例，分析割裂`__call`魔术方法和`forward`方法会产生什么反应。
+下面用一个简单的案例，分析割裂`__call__`魔术方法和`forward`方法会产生什么反应。
 
 ```python
 class Demo:
