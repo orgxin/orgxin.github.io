@@ -1,6 +1,6 @@
 ---
-title: '_ _call_ _和forward方法的用途与区别'
-excerpt: '本文以案例的形式全面对比分析魔术命令_ _call_ _和forward方法的联系与区别'
+title: `__call__`和forward方法的用途与区别'
+excerpt: '本文以案例的形式全面对比分析魔术命令`__call__`和forward方法的联系与区别'
 permalink: /pytorch/2024-01-31-call_forward
 date: 2024-01-31
 tags:
@@ -10,9 +10,9 @@ tags:
 
 关于`__call__`和`forward`的用法一直有几个较为困惑的地方，如下：
 
-+ 类实例化之后就会直接调用`__call__`方法，然后输出该方法的return结果。**为什么不直接定义函数，定义class岂不显得多此一举？**
++ 类实例化之后就会直接调用`__call__`方法，然后输出该方法的return结果。为什么不直接定义函数，定义class岂不显得多此一举？
 + `forawrd`方法一般继承了父类，而父类中已经定义了`__call__`方法，所以实例化之后，你不需要`model.forward(x)`，直接`model(x)`即可调用类下面的`forward()`方法？
-+ 如果一个类下面既有`__call__`和`forward`该怎么执行，如果考虑**继承**和**不继承**会出现什么情况？
++ 如果一个类下面既有`__call__`和`forward`该怎么执行，如果考虑继承和不继承会出现什么情况？
 
 因此，接下来将以案例的形式解决上述三个问题。
 
@@ -42,9 +42,9 @@ squarer = Squarer()
 result = squarer._call(5) # 显示调用类下面函数
 ```
 
-<font color=red>**小结：**魔术方法更加简洁，使得类的实例可以像函数一样被调用。</font>
+<font color=red><b>小结</b>：魔术方法更加简洁，使得类的实例可以像函数一样被调用。</font>
 
-下面进一步分析该魔术方法相比类方法的优势所在。具体而言，`__call__`在<font color=blue>**对象状态保持或者配置时更具有优势。**</font>接下来仍然用两个案例加以说明状态保持的重要性。
+下面进一步分析该魔术方法相比类方法的优势所在。具体而言，`__call__`在<font color=blue>对象状态保持或者配置时更具有优势。</font>接下来仍然用两个案例加以说明状态保持的重要性。
 
 **`__call__`案例：**
 
@@ -78,7 +78,7 @@ print(counter.increment())  # 输出：1
 print(counter.increment())  # 输出：2
 ```
 
-<font color=red>**小结：**第二种方法需要频繁的显示调用类方法来改变这种状态，第一种方法可以保持内部状态。</font>
+<font color=red><b>小结</b>：第二种方法需要频繁的显示调用类方法来改变这种状态，第一种方法可以保持内部状态。</font>
 
 # 2. `forward`方法
 
@@ -168,7 +168,7 @@ s5: 11
 module传入的参数是： 11
 ```
 
-<font color=red>**小结：**在nn.Module模块中，forward方法是专门用于做核心计算的模块，但其并不返回计算结果(不直接被调用)，而是通过`__call__`间接调用，并返回forward计算获得的结果。</font>
+<font color=red><b>小结：</b>在nn.Module模块中，forward方法是专门用于做核心计算的模块，但其并不返回计算结果(不直接被调用)，而是通过`__call__`间接调用，并返回forward计算获得的结果。</font>
 
 # 3. 联系和区别
 
