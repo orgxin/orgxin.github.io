@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: '郑之杰的个人网站'
+title: 'xxx的个人网站'
 description: '为天地立心, 为生民立命, 为往圣继绝学, 为万世开太平'
 keyword: '数学, 机器学习, 深度学习'
 url: '' # your host
@@ -24,12 +24,12 @@ footer:
   since: 2024
 
 # Author 配置博主信息
-author: 'xxx'
+author: 'xxx' # 名字
 nickname: 'xxx'
-bio: 'xxxx'
+bio: 'xxxx' # 简介
 #avatar: 'https://github.com/0809zheng/0809zheng.github.io/blob/master/assets/icons/icon.jpg?raw=true'
 # avatar: 'https://pic.imgdb.cn/item/6184e14b2ab3f51d912026fc.jpg'
-avatar: './imgs/theam.png'
+avatar: './imgs/theam.png' # 个人图像
 
 # Search 关键词搜索
 search: true
