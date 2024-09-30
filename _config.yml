@@ -27,7 +27,7 @@ footer:
 # Author 配置博主信息
 author: '陈新'   # 名字
 nickname: '新'  # 昵称 
-bio: '纸上得来终觉浅' # 座右铭
+bio: 'Email: chenxinnpu@gmail.com' # 座右铭
 avatar: './imgs/me.jpg' # 个人图像
 
 
@@ -68,7 +68,6 @@ postPatterns: 'circuitBoard'
 sns:
   github: '//github.com/orgxin'
   weibo: '//weibo.com/u/7745733996'
-  email: 'chenxinnpu@gmail.com'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar

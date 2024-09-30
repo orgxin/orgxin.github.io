@@ -69,18 +69,9 @@ header-img: './imgs/theme.jpg'
                 <ul id="sns-links" class="sns-links">
                     {% for s in site.sns %}
                     <li>
-                        <!-- 补充判断email语句 -->
-                        {% if s[0] == "email" %}
-                        <a href="javascript:void(0)" onclick="showEmail()">
-                            <i class="iconfont icon-{{ s[0] }}"></i>
-                            <span id="email-address" style="display: none;">{{ s[1] }}</span>
-                            <span id="email-text">Click to show email</span>
-                        </a>
-                        {% else %}
                         <a href="{{ s[1] }}" target="_blank">
                             <i class="iconfont icon-{{ s[0] }}"></i>
                         </a>
-                        {% endif %}
                     </li>
                     {% endfor %}
                 </ul>
@@ -108,20 +99,6 @@ header-img: './imgs/theme.jpg'
         {% endif %}
 
     </aside>
-
-<!-- 新增代码 -->
-    <script>
-        function showEmail() {
-            var emailAddress = document.getElementById("email-address");
-            var emailText = document.getElementById("email-text");
-    
-            if (emailAddress.style.display === "none") {
-                emailAddress.style.display = "inline";
-                emailText.style.display = "none";
-            }
-        }
-    </script>
-
 
 </main>
 
