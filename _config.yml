@@ -24,12 +24,10 @@ footer:
   since: 2024
 
 # Author 配置博主信息
-author: 'xxx' # 名字
-nickname: 'xxx'
-bio: 'xxxx' # 简介
-#avatar: 'https://github.com/0809zheng/0809zheng.github.io/blob/master/assets/icons/icon.jpg?raw=true'
-# avatar: 'https://pic.imgdb.cn/item/6184e14b2ab3f51d912026fc.jpg'
-avatar: './imgs/theam.png' # 个人图像
+author: '陈新'   # 名字
+nickname: 'xxx'  # 昵称 
+bio: '纸上得来终觉浅 ' # 简介
+avatar: './imgs/me.jpg' # 个人图像
 
 # Search 关键词搜索
 search: true
