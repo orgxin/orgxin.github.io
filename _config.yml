@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: 'xxx的个人网站'
+title: '陈新的个人网站' # 网站标题
 description: '为天地立心, 为生民立命, 为往圣继绝学, 为万世开太平'
 keyword: '数学, 机器学习, 深度学习'
 url: '' # your host
@@ -23,11 +23,13 @@ nav:
 footer:
   since: 2024
 
+
 # Author 配置博主信息
 author: '陈新'   # 名字
-nickname: 'xxx'  # 昵称 
-bio: '纸上得来终觉浅 ' # 简介
+nickname: '新'  # 昵称 
+bio: '纸上得来终觉浅，绝知此事要躬行' # 座右铭
 avatar: './imgs/me.jpg' # 个人图像
+
 
 # Search 关键词搜索
 search: true
@@ -65,7 +67,8 @@ postPatterns: 'circuitBoard'
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
   github: '//github.com/orgxin'
-  # weibo: '//weibo.com/u/5627414506'
+  weibo: '//weibo.com/u/7745733996'
+  email: 'chenxinnpu@gmail.com'
   # zhihu: '//zhihu.com/people/zheng-zhi-jie-36'
 
 # Tags 设置标签
