@@ -68,7 +68,7 @@ postPatterns: 'circuitBoard'
 sns:
   github: '//github.com/orgxin'
   weibo: '//weibo.com/u/7745733996'
-  email: 'mailto:chenxinnpu@gmail.com'
+  email: 'chenxinnpu@gmail.com'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
