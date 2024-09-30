@@ -27,7 +27,7 @@ footer:
 # Author 配置博主信息
 author: '陈新'   # 名字
 nickname: '新'  # 昵称 
-bio: 'Email: chenxinnpu@gmail.com' # 座右铭
+bio: 'chenxinnpu@gmail.com' # 座右铭
 avatar: './imgs/me.jpg' # 个人图像
 
 
