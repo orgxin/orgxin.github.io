@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: '郑之杰的个人网站'
+title: 'xxx的个人网站'
 description: '为天地立心, 为生民立命, 为往圣继绝学, 为万世开太平'
 keyword: '数学, 机器学习, 深度学习'
 url: '' # your host
@@ -21,14 +21,15 @@ nav:
 
 # Footer
 footer:
-  since: 2020
+  since: 2024
 
 # Author 配置博主信息
-author: '郑之杰'
-nickname: '之杰'
-bio: '热爱旅行家，深度学习者'
+author: 'xxx' # 名字
+nickname: 'xxx'
+bio: 'xxxx' # 简介
 #avatar: 'https://github.com/0809zheng/0809zheng.github.io/blob/master/assets/icons/icon.jpg?raw=true'
-avatar: 'https://pic.imgdb.cn/item/6184e14b2ab3f51d912026fc.jpg'
+# avatar: 'https://pic.imgdb.cn/item/6184e14b2ab3f51d912026fc.jpg'
+avatar: './imgs/theam.png' # 个人图像
 
 # Search 关键词搜索
 search: true
@@ -44,9 +45,9 @@ comments:
   gitalk: true
   gitalk_clientID: 'd45b6dcdac0458c21c03'
   gitalk_Secret: '875ea1d909ddd834f6e6dc7448d0616eec1096a2'
-  gitalk_repo: '0809zheng.github.io'
-  gitalk_owner: '0809zheng'
-  gitalk_admin: '0809zheng'
+  gitalk_repo: 'orgxin.github.io'
+  gitalk_owner: 'orgxin'
+  gitalk_admin: 'orgxin'
   distractionFreeMode: true
 
 # MathJax 公式支持 by Ray-Eldath
@@ -65,9 +66,9 @@ postPatterns: 'circuitBoard'
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  github: '//github.com/0809zheng'
-  weibo: '//weibo.com/u/5627414506'
-  zhihu: '//zhihu.com/people/zheng-zhi-jie-36'
+  github: '//github.com/orgxin'
+  # weibo: '//weibo.com/u/5627414506'
+  # zhihu: '//zhihu.com/people/zheng-zhi-jie-36'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
