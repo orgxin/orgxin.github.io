@@ -34,6 +34,7 @@ avatar: './imgs/me.jpg' # 个人图像
 # 告诉 Jekyll 包含 _posts/test/imgs 目录。
 include:
   - "_posts/test/imgs"
+  - "_posts"
 
 
 # Search 关键词搜索
