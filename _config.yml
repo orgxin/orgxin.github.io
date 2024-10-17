@@ -2,7 +2,8 @@
 title: '陈新的个人网站' # 网页最下面的标注
 description: '为天地立心, 为生民立命, 为往圣继绝学, 为万世开太平'
 keyword: '数学, 机器学习, 深度学习'
-url: '' # your host
+# url: '' # your host
+url: https://orgxin.github.io
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
 # 在服务器上建站时，如果你不需要子域名，请将这一格留空
